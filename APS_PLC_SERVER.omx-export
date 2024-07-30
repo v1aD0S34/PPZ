@@ -1,0 +1,1076 @@
+<omx xmlns="system" xmlns:ct="automation.control" migration="29">
+  <ct:object name="PPZ" access-level="public" access-scope="global" uuid="230984dd-8c65-4ea8-8227-5f24a0b77619">
+    <ct:object name="Tm_sl_up1_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из упорного подшипника № 1 ТВД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Tm_sl_op2_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 2 ТВД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Tmsm_D" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла смазки в коллекторе аварийно высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Tm_sl_p1_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 1 ТВД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Tm_sl_p3_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 3 ТНД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Tm_sl_p4_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 4 ТНД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="L70NHL" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Провал оборотов"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="N_TND_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность всех каналов измерения оборотов ТНД"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="N_TVD_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность всех каналов измерения оборотов ТВД"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="KCU_SK" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Контроль цепи СК"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="RK_fault" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="РК:Авария"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="PNA_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="ПНА: Рассогласование"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Break_SK_1ch" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обрыв 1-го канала положения СК"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Break_PNA_2ch" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обрыв 2-х каналов положения ПНА"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Flame_failur" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Погасание факела"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="T_out_D" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Средняя температура на выхлопе турбины аварийно-низкая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Kr1_ON_OF" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Самопроизвольная перестановка крана 1"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="PM_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нерасцепление пусковой муфты"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Tair_in_OK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура воздуха на входе осевого компрессора аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="SK_over_Open" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Чрезмерное открытие СК"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="T_CJT1_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность температуры холодного спая1"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="T_CJT2_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность температуры холодного спая2"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Pmz" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла предельной защиты аварийно-низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="P_in_OK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Разрежение на входе в осевой компрессор аварийно-высокое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="Pmg" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла гидравлики аварийно-низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="dT_out_D_A" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Избыток топлива"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="T_out_D" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Средняя температура на выхлопе турбины аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Pg_out_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление газа на выходе нагнетателя аварийно- высокое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Pmsm_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла смазки нагнетателя аварийно-низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="V_1p_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника ТВД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="V_4p_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника ТНД аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Hm_MA" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень в аккумуляторе масла уплотнения аварийно-низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Tg_out_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура газа на выходе нагнетателя аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Tm_sl_opN1" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из подшипника №1 нагнетателя аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Tm_sl_opN2" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из подшипника №2 нагнетателя аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="ARM_NObs" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нормальная остановка с дисплея оператора (НОбс)"/>
+      <attribute type="unit.System.Attributes.Title" value="НОбс"/>
+    </ct:object>
+    <ct:object name="ARM_NOss" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нормальная остановка с дисплея оператора (НОсс)"/>
+      <attribute type="unit.System.Attributes.Title" value="НОсс"/>
+    </ct:object>
+    <ct:object name="ARM_AObs" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Аварийная остановка с дисплея оператора (АОбс)"/>
+      <attribute type="unit.System.Attributes.Title" value="АОбс"/>
+    </ct:object>
+    <ct:object name="ARM_AOss" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Аварийная остановка с дисплея оператора (АОсс)"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Btn_AO" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="ПРУ:  Кнопка АО нажата"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Btn_EAO_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="ПРУ:  Кнопка ЭАО нажата"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="AO_SauKC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Аварийный останов от САУ КЦ"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Fire_GPA" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Пожар в укрытии ГПА"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Vg_N_stP_g" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника Н горизонтальная со стороны привода аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Vg_N_stK_g" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника Н горизонтальная со стороны крышки аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Vg_N_stP_v" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника Н вертикальная со стороны привода аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Vg_N_stK_v" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника Н вертикальная со стороны крышки аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="OS_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Осевой сдвиг нагнетателя аварийно-высокий (вперёд)"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="OS_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Осевой сдвиг нагнетателя аварийно-высокий (назад) "/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="P_tgSK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление топливного газа перед СК аварийно-низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Kr5_ON_inSW" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Самопроизвольная перестановка Крана 5"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="P_msm" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла в коллекторе смазки аварийно-низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="As_SurgeN" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Помпаж нагнетателя"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Flame_in_box2" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Наличие факела на остановленном ГПА в камере № 2"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box3" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Наличие факела на остановленном ГПА в камере № 3"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box4" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Наличие факела на остановленном ГПА в камере № 4"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box5" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Наличие факела на остановленном ГПА в камере № 5"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dP_mg" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад масло-газ аварийно-низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="Pg_out_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление газа на выходе нагнетателя высокое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dP_mg" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад масло-газ низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Ppg" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление пускового газа низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="Ppg" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление пускового газа высокое"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="P_tgSK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление топливного газа перед СК высокое"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="P_tgSK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление топливного газа перед СК низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="P_tgSK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление топливного газа перед СК низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="P_in_OK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Разрежение на входе в осевой компрессор высокое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="P_msm" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла в коллекторе смазки низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pmsm_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла смазки нагнетателя низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pmz" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла предельной защиты низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pmg" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление масла гидравлики низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dP_fms" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад давления на фильтре масла смазки муфты (0,5 мкм) высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dP_gf" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад давления на главном фильтре масла смазки (5 мкм) высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dPf_mg1" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад давления на фильтре № 1 масла гидравлики высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dPf_mg2" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад давления на фильтре № 2 масла гидравлики высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Lmb" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в маслобаке низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Lmb" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в маслобаке высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="V_1p_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника ТВД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="V_4p_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Vg_N_stP_g" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация вала Н со стороны привода горизонтальная высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Vg_N_stK_g" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация вала Н с против. приводу стороны горизонтальная высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="OS_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Осевой сдвиг ротора нагнетателя высокий (вперёд)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="OS_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Осевой сдвиг ротора нагнетателя высокий (назад)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Hm_MA" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень в аккумуляторе масла уплотнения не в норме"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tg_out_N" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура газа на выходе нагнетателя высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Ttg_in_BPTG" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура топливного газа после измерительной диафрагмы низкая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tv_out_kotl_UTO" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура воды на выходе котла-утилизатора"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T1_in_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 1 перед ТВД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T1_out_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 1 за ТВД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T1_in_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 1 перед ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T1_out_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 1 за ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_MB" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла в маслобаке низкая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tv_OT" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура воздуха в турбинном отсеке на 1-м уровне аварийно-высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_up1_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Т масла на сливе из УП №1 ТВД"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_op2_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Т масла на сливе из ОП №2 ТВД"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_opN1" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Т масла на сливе из ОП №1 нагнетателя (со стор. привода)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_opN2" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Т масла на сливе из ОП №2 нагнетателя (со стороны прив.)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T_vihlop" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура под выхлопной шахтой высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T2_in_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 2 перед ТВД  высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T2_out_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 2 за ТВД  высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T2_in_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 2 перед ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T2_out_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура № 2 за ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tmsm_D" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла смазки в коллекторе высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_p1_TVD" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 1 ТВД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_p3_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 3 ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_sl_p4_TND" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла на сливе из опорного подшипника № 4 ТНД высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T_out_D" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Средняя температура на выхлопе турбины высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T_out_D" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Средняя температура на выхлопе турбины низкая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T_out_TVD" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Средняя температура за ТВД  высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="T_in_TND" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Средняя температура перед ТНД  высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tair_in_OK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура воздуха на входе осевого компрессора высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Gas_10" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Загазованность в укрытии ГПА 10%"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Stock_10" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Запас по помпажу менее 10%"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="TND_not_start" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет подрыва ТНД на пуске"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dT_out_TVD" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад температуры на ТВД высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dT_out_TND" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад температуры на ТНД высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Self_switch2" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Самопроизвольная перестановка крана 2"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="KL_CO2_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Заслонка с приводом от СО2 не закрыта"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="QF_U_HB1_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Автоматы питания  включены"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Uosn_AG24DC_PLC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность основного ИП =24 В ПЛК"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Ures_AG24DC_PLC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность резервного ИП =24 В ПЛК"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Uosn_AG24DC_AI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность основного ИП =24 В аналоговых входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Ures_AG24DC_AI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность резервного ИП =24 В аналоговых входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Uosn_AG24DC_DI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность основного ИП =24 В дискретных входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Ures_AG24DC_DI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность резервного ИП =24 В дискретных входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="U_MCC_norm" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Напряжение в MCC не в норме"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="PM_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нерасцепление пусковой муфты"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box3" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Погасание факела или неисправность n3"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box5" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Погасание факела или неисправность n5"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box4" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Погасание факела или неисправность n4"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Flame_in_box2" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Погасание факела или неисправность n2"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Start_Flame_Fall" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет зажигание на пуске "/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Min_fuelSupp" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Подача топлива на минимуме"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Box_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность камеры сгорания"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="GPA_Cool_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Не включено охлаждение ГПА"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Start_timeHi" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Превышено время пуска (ПС)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L30SPTA" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность ТС на выхлопе"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L30SPTP_Up" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Аварийный перекос вверх"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L30SPTN_Down" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Аварийный перекос вниз"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L30SPTP" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Предупредительный перекос вверх"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L30SPTN" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Предупредительный перекос вниз"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="AOK_work" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Возможно обледенение. АОК в работе"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Bp1_Flt_VZK_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Байпас фильтра ВЗК открыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Eng_Overload" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перегрузка двигателей вспомогательного оборудования"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Overload_AntiIce" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перегрузка приводов антиоблединения"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Overload_VOT" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перегрузка агрегата ВОТ"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Boek_TD" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Выключатель предельных оборотов ТД сработал"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="PWR_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Потеря внешнего энергоснабжения"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Gen_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вспомогательный генератор не включен"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Gen_pwr_fault" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Потеря мощности генератора"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="ContrU100" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Земля на +100 В"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="ContrUm100" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Земля на -100 В"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="KCU_PNA_obm1" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Контроль обмотки №1 сервоклапана управления ПНА"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="KCU_PNA_obm2" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Контроль обмотки №2 сервоклапана управления ПНА"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pv_out_kotl_UTO" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление воды на выходе котла-утилизатора низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Vg_N_stP_v" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вертикальная вибрация подшипника нагнетателя со стороны привода высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Vg_N_stK_v" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация подшипника нагнетателя вертикальная со стороны крышки высокая"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Приведенные обороты ТВД высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Приведенные обороты ТНД высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="U_AMNS_norm" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Напряжение на АМНС не в норме"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Kr5_noOF" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран 5 не закрыт на пуске или работе ГПА"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="RK_no_conrol" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Рассогласование РК"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="PM_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нерасцепление пусковой муфты"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L_ogPn" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень в баке охлаждающей жидкости низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pohl" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Давление охлаждающей жидкости низкое"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L_mbd" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в маслобаке низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L_mbd" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в маслобаке высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L_mbd" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в баке дегазатора выс. (вкл. Осн.насоса)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L_mbd" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в баке дегазатора выс. (вкл. резерв насоса)"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="L_mbd" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в баке дегазатора &gt; 250 мм"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tm_MB" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла в маслобаке  низкая"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Tm_MB" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла в баке в норме"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Tmsm_D" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Температура масла смазки в коллекторе высокая "/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="N_VD" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обороты ТВД аварийно-высокие об.мин"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="N_VD" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обороты ТВД высокие обюмин"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Приведенные обороты ТВД аварийно-высокие %"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД откл. Кл. вариатор"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД продувка КС"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД  отключение ТД"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД отключение пуск. муфты"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД отключение насосов"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД включение генератора"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД кольцо"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД перход на сеть"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД включение насосов"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет нулевых оборотов ТВД"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет нулевых оборотов ТВД"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="VD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТВД останов ГПА"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="N_ND" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обороты ТНД аварийно-высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="N_ND" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обороты ТНД высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Приведенные обороты ТНД аварийно-высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет подрыва ТНД на пуске "/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТНД включение генератора"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТНД кольцо"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТНД останов"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТНД НО ГПА"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТНД закрыть Кр.1,2"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет нулевых оборотов ТНД"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="ND_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Нет нулевых оборотов ТНД"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="N_TD" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обороты ТД аварийно-высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="N_TD" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обороты ТД высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="TD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Приведенные обороты ТД аварийно-высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="TD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Приведенные обороты ТД высокие"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="TD_pr" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="N ТД отключение ТД"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="AO_Vtvd" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="АО Вибрация ТВД"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="AO_Vtnd" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="АО Вибрация ТНД"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="AO_Vn" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="АО Вибрация Нагнетателя"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="ASPT_fault" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность системв пожаротушения"/>
+      <attribute type="unit.System.Attributes.Title" value="АОсс"/>
+    </ct:object>
+    <ct:object name="L_fTG_h" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень в фильтре ТГ высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="dP_Fg_h" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Перепад на фильтре технологического газа высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pv_BT" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Р в боксе турбины &gt;15 мм в.ст."/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pv_BPV" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Р в боксе промвала &gt;15 мм в.ст."/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="Pv_BVO" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Р в боксе вспомоборудования  &gt;15 мм в.ст."/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="V_Vent_og_1" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация вент. №1 охл. жидкости"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="V_Vent_og_2" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Вибрация вент. №2 охл. жидкости"/>
+      <attribute type="unit.System.Attributes.Title" value="ПС"/>
+    </ct:object>
+    <ct:object name="POS_SK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="СК не закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="POS_SK" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="СК не закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="Lmb" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в маслобаке низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Pos_PNA" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="ПНА не открыт"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="Pos_PNA" base-type="Types.APS.PPZ_Calc_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="ПНА не открыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Lmb" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень масла в маслобаке высокий"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Zasl_AntiIce_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Антиобледенительная заслонка не Закрыта"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="ZaKl_AntiIce_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Антиобледенительный клапан запорный не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kl_AntiIce_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Антиобледенительный клапан регулир не закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr1_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №1 не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr2_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №2 не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr4_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №4 не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr5_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №5 не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="APK_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="АПК не закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr6a_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №6А не Открыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr11_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №11 не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr12_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №12 не Закрыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr9_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №9 нне Открыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Kr10_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Кран №10 нне Открыт"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="L_ogPn" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Уровень в баке охл. Жидкости не Низкий"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="AO_SauKC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="АО из цеховой САУ  (Н.З.)"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="PM_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Пусковая муфта в зацеплении"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="KL_CO2_OF" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Засл. с прив. от СО2 Закрыта"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="PLC_GOOD" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность САУ PLC"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="U_MCC_norm" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Напряжение в МСС пониженное"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="AO_signals" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Есть аварийный сигнал"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="QF_U_HB1_ON" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Автоматы питания  не включенны"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Uosn_AG24DC_PLC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Исправность основн. ИП.24В контроллера"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Ures_AG24DC_PLC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Исправность резервн. ИП.24В контроллера"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Uosn_AG24DC_DI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Исправность основн. ИП.24В дискр. входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Ures_AG24DC_DI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Исправность резервн. ИП.24В дискр. входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Uosn_AG24DC_AI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Исправность основн. ИП.24В анал. входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Ures_AG24DC_AI" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Исправность резервн. ИП.24В анал. входов"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Contr_RC" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Контроль резервной цепи"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="ASPT_fault" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность системы пожаротушения"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="KCU_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Обрыв цепей управления"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="AnPar_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Аналоговые параметры неисправны"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="TT_BAD" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Термопар"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="TSM_BAD" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Термосопротивлений"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Flame_in_box3" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Факел в камере №3"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Flame_in_box5" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Факел в камере №5"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Flame_in_box4" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Факел в камере №4"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="Flame_in_box2" base-type="Types.APS.PPZ_DI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Факел в камере №2"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_VD1_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ТВД №1"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_VD2_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ТВД №2"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_VD3_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ТВД №3"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_ND1_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ТНД №1"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_ND2_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ТНД №2"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_ND3_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ТНД №3"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="N_TD_fault" base-type="Types.APS.PPZ_LG_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Неисправность Обороты ротора ПТ"/>
+      <attribute type="unit.System.Attributes.Title" value="ХР"/>
+    </ct:object>
+    <ct:object name="T_SAU" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Включение вентилятора ШУ"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="Tv_atm_okrSr" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Включение в работу регулятора АОК"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="Tv_atm_okrSr" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Возможно облединение-взвод"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+    <ct:object name="Tv_atm_okrSr" base-type="Types.APS.PPZ_AI_PLC" access-level="public" access-scope="global" aspect="Aspects.PLC" uuid="00000000-0000-0000-0000-000000000000">
+      <attribute type="unit.System.Attributes.Description" value="Возможно облединение-сброс"/>
+      <attribute type="unit.System.Attributes.Title" value="Упр"/>
+    </ct:object>
+  </ct:object>
+</omx>
