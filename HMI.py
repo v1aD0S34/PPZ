@@ -93,8 +93,8 @@ def HMIGenerate():
 
         # Пример добавления <init> элементов
         init_attributes = [
-            {'target': '_initUst', 'value': obj_elem['name'] if obj_elem['base-type'] in ['BasePPZ_AI', 'BasePPZ_Calc_AI'] else 'ИСТИНА'},
-            {'target': '_initDelay', 'value': '0'},
+            {'target': '_initUst', 'value': obj_elem['name'] if obj_elem['base-type'] in ['BasePPZ_AI', 'BasePPZ_Calc_AI'] else obj_elem['ust']},
+            {'target': '_initDelay', 'value': '0' if str(obj_elem['delay']) == 'nan' else str(obj_elem['delay'])},
             {'target': '_initNum', 'value': str(index + 1)},  # Индекс + 1
             {'target': '_init_AS', 'value': obj_elem['name']}  # Значение name объекта
         ]
